@@ -91,10 +91,10 @@ class PotionCommandLine
       puts '     Creating app'
 
       `motion create --template=git@github.com:infinitered/redpotion-template.git #{app_name}`
+      `cd #{app_name}`
 
       puts %{
       Complete. Things you should do:
-      > cd #{app_name}
       > bundle
       > rake pod:install
       > rake spec
